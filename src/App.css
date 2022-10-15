@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  color: #F4F4F5;
+}
+
+.board-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+}
+
+.player {
+  display: flex;
+  flex: 33%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.player-wrapper {
+  
+  padding-right: 40px;
+  font-size: 2rem;
+}
+
+.board-wrapper {
+  display: flex;
+  flex: 67%;
+  justify-content: flex-start;
+}
+
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.winner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.winner {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.btn {
+  all: unset;
+  margin-top: 24px;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8257E5;
+  outline-style: none;
+  border-radius: 9px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #996DFF;
+}
+
+
+.player-symbol {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .board-container {
+    flex-direction: column;
+  }
+
+  .player {
+    justify-items: center;
+  }
+
+  .player-wrapper {
+    padding: 0;
+  }
+
+  .board-wrapper {
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .board {
+    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+
